@@ -20,7 +20,7 @@ Este repo es básicamente un archivo de lo que fue. El código está aquí para 
 
 ### Revenue Total
 
-Durante los 3 años de operación, Rebel Notify generó ingresos significativos como cookgroup:
+Durante los 3 años de operación, Rebel Notify generó ingresos significativos como cookgroup, fragmento recuperado del año 2023 (antes del crash):
 
 <img src="./revenue.png" width="600" alt="Rebel Notify Revenue">
 
