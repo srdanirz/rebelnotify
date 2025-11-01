@@ -1,0 +1,8 @@
+{
+  "webhook_url": [
+    "https://discord.com/api/webhooks/YOUR_WEBHOOK_ID_1/YOUR_WEBHOOK_TOKEN_1",
+    "https://discord.com/api/webhooks/YOUR_WEBHOOK_ID_2/YOUR_WEBHOOK_TOKEN_2"
+  ],
+  "fail_webhook_url": "https://discord.com/api/webhooks/YOUR_FAIL_WEBHOOK_ID/YOUR_FAIL_WEBHOOK_TOKEN",
+  "delay": 3000
+}

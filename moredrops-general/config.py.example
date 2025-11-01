@@ -1,0 +1,11 @@
+class Discord:
+    WEBHOOK_URL = 'https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN'
+    USERNAME = 'REBEL NOTIFY'
+    AVATAR_URL = 'https://i.pinimg.com/originals/6b/fd/41/6bfd41330325c4ad1f1e0bb6d4291db4.jpg'
+    COLOUR = 16777215
+    FOOTER_TEXT = 'Rebel Notify'
+    FOOTER_URL = 'https://i.pinimg.com/originals/6b/fd/41/6bfd41330325c4ad1f1e0bb6d4291db4.jpg'
+
+class Configuration:
+    ENABLE_FREE_PROXY = False
+    USERAGENT = ''

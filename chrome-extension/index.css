@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#main {
+    width: 391.2px;
+    height: 599px;
+    background: #1E1D24;
+}
+
+#logo {
+    position: absolute;
+    width: 24.25px;
+    height: 21.97px;
+    left: 24.1px;
+    top: 29.69px;    
+}
+
+#text {
+    position: absolute;
+    width: 92.29px;
+    height: 17.93px;
+    left: 60.84px;
+    top: 34.45px;
+}
+
+#button-cross {
+    position: absolute;
+    width: 7.94px;
+    height: 12.64px;
+    left: 371.51px;
+    top: 9.7px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10.287px;
+    line-height: 13px;
+    /* identical to box height */
+    
+    
+    color: #4D4B59;
+}
+
+input[type=text] {
+    position: absolute;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11.7566px;
+    line-height: 14px;
+
+    background: #26252E;
+    border: 0.881747px solid #4D4B59;
+    box-sizing: border-box;
+    border-radius: 2.93916px;
+
+    width: 259.53px;
+    text-indent: 12.64px;
+
+    color: #FFFFFF;
+}
+
+#second label, .line {
+    position: absolute;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11.7566px;
+    line-height: 14px;
+
+    color: #FFFFFF;
+
+    height: 14.4px;
+}
+
+#account-email + label {
+    width: 88.47px;
+    left: 60.84px;
+    top: 84.35px;
+}
+
+#account-email {
+    height: 30.57px;
+    left: 60.84px;
+    top: 107.57px;
+}
+
+#account-pw + label {
+    width: 112.86px;
+    left: 60.84px;
+    top: 155.78px;
+}
+
+#account-pw {
+    height: 30.57px;
+    left: 60.84px;
+    top: 178.99px;
+}
+
+#name + label {
+    position: absolute;
+    width: 62.02px;
+    left: 60.84px;
+    top: 227.2px;
+}
+
+#name {
+    height: 30.57px;
+    left: 60.84px;
+    top: 250.42px;
+}
+
+#cardnumber + label {
+    width: 104.05px;
+    left: 60.84px;
+    top: 298.62px;
+}
+
+#cardnumber {
+    height: 30.57px;
+    left: 60.84px;
+    top: 321.84px;
+}
+
+#expirymonth, #expiryyear, #cuotas {
+    width: 82px;
+    height: 30.57px;
+    top: 366.81px;
+    
+    background: #26252E;
+    border: 0.881747px solid #4D4B59;
+    box-sizing: border-box;
+    border-radius: 2.93916px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11.7566px;
+    line-height: 14px;
+    color: #FFFFFF;
+    text-indent: 6px;
+}
+
+#expirymonth {
+    left: 60.84px;
+}
+#expiryyear {
+    left: 149.6px;
+}
+#cuotas {
+    left: 238.37px;
+}
+
+#cvv {
+    width: 82px;
+    height: 30.57px;
+    left: 60.84px;
+    top: 406.19px;
+}
+
+#rut {
+    width: 82px;
+    height: 30.57px;
+    left: 149.6px;
+    top: 406.19px;
+}
+
+#button-save {
+    position: absolute;
+    width: 86.12px;
+    height: 19.99px;
+    left: 60.84px;
+    top: 451.16px;
+
+    background: #69E79B;
+    border-radius: 2.35132px;
+    padding-right: 26.45px;
+
+}
+#button-main {
+    position: absolute;
+    width: 86.29px;
+    height: 20.03px;
+    left: 60.84px;
+    top: 480.9px;
+    background: #8969E7;
+    border-radius: 2.35612px;
+}
+#main-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#button-text {
+    position: absolute;
+    width: 17.93px;
+    height: 8.82px;
+    left: 102.28px;
+    top: 456.74px;
+}
+
+#stripe1 {
+    position: absolute;
+    width: 246.98px;
+    height: 645.06px;
+    left: 108.95px;
+    top: -385px;
+
+    background: linear-gradient(180deg, #27262F 0%, rgba(30, 29, 36, 0) 100%);
+    transform: rotate(-22.19deg);
+}
+#stripe2 {
+    position: absolute;
+    width: 173.68px;
+    height: 762.35px;
+    left: 150px;
+    top: -60px;
+    
+    background: linear-gradient(180deg, rgba(30, 29, 36, 0) 0%, #27262F 100%);
+    transform: rotate(-22.19deg);
+}
+#stripe3 {
+    position: absolute;
+    width: 250.43px;
+    height: 646.95px;
+    left: -80px;
+    top: -20px;
+    
+    background: linear-gradient(180deg, #27262F 0%, rgba(30, 29, 36, 0) 100%);
+    transform: rotate(-22.19deg);    
+}
+
+/* NEXT */
+#info {
+    width: 391.2px;
+    height: 599px;
+    background: #1E1D24;
+}
+
+/* LOGIN */
+#login {
+    width: 391.2px;
+    height: 599px;
+    background: #1E1D24;
+}
+
+#button-oauth {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 35px;
+}
+
+#version-number {
+    position: absolute;
+    width: 45px;
+    height: 30px;
+    left: 392px;
+    top: 590px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 30px;
+    color: #BCBCBC;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+}

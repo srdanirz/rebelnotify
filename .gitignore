@@ -1,0 +1,86 @@
+# Rebel Notify - Git Ignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# Environment variables
+.env
+*.env
+!.env.example
+
+# Configuración sensible
+settings.json
+!settings.json.example
+config.py
+!config.py.example
+
+# Proxies
+proxies.txt
+!proxies.txt.example
+
+# PIDs y SKUs
+pids.txt
+!pids.txt.example
+skus.txt
+!skus.txt.example
+
+# Bases de datos
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+test.log
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Heroku
+.heroku/
+
+# Otros
+*.bak
+*.tmp
+*.temp

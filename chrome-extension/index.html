@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="second.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <p id="version-number">v3.1</p>
+    <div id="stripe1"></div>
+    <div id="stripe2"></div>
+    <div id="stripe3"></div>
+
+    <img id="logo" src="./imgs/logo.png"/>
+    <img id="text" src="./imgs/text.png">
+
+    <p id="button-cross">X</p>
+
+    <div id="login">
+        <img id="button-oauth" src="./imgs/discordlogin.png"/>
+    </div>
+
+    <div id="second">
+        <input id="account-email" type="text" placeholder="Account Email">
+        <label for="account-email">Account Email</label>
+        <input id="account-pw" type="text" placeholder="Account Password">
+        <label for="account-pw">Account Password</label>
+        <input id="name" type="text" placeholder="Full Name">
+        <label for="name">Full Name</label>
+        <input id="cardnumber" type="text" placeholder="Card Number">
+        <label for="cardnumber">Card Information</label>
+        
+        <select id="expirymonth">
+            <option value="default" disabled>Expiry Month</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+        <select id="expiryyear">
+            <option value="default" disabled>Expiry Year</option>
+            <option value="21">2021</option>
+            <option value="22">2022</option>
+            <option value="23">2023</option>
+            <option value="24">2024</option>
+            <option value="25">2025</option>
+            <option value="26">2026</option>
+            <option value="27">2027</option>
+            <option value="28">2028</option>
+            <option value="29">2029</option>
+            <option value="30">2030</option>
+        </select>
+        <select id="cuotas">
+            <option value="default" disabled>Cuotas</option>
+            <option value="1">1 Month</option>
+            <option value="3">3 Months</option>
+            <option value="4">4 Months</option>
+            <option value="5">5 Months</option>
+            <option value="6">6 Months</option>
+            <option value="9">9 Months</option>
+            <option value="12">12 Months</option>
+        </select>
+        <input id="cvv" type="text" placeholder="CVV">
+        <input id="rut" type="text" placeholder="Rut">
+
+        <a id="button-main">
+            <p id="main-text">Main Page</p>
+        </a>
+        <button id="button-save" value="Save">
+            <img src="imgs/save.png">
+        </button>
+        <p id="button-text">Save</p>
+    </div>
+
+    <div id="main">
+        <input id="link" type="text" placeholder="Enter early link"/>
+        <label class="line" for="link">Early Link</label>
+        <input id="delay" type="text" placeholder="Enter monitor delay">
+        <label class="line" for="delay">Monitor Delay (s)</label>
+        <select id="size">
+            <option value="default" disabled>Choose Shoe Size Selection</option>
+            <option value="5.5">US 5.5</option>
+            <option value="6">US 6</option>
+            <option value="6.5">US 6.5</option>
+            <option value="7">US 7</option>
+            <option value="7.5">US 7.5</option>
+            <option value="8">US 8</option>
+            <option value="8.5">US 8.5</option>
+            <option value="9">US 9</option>
+            <option value="9.5">US 9.5</option>
+            <option value="10">US 10</option>
+            <option value="10.5">US 10.5</option>
+            <option value="11">US 11</option>
+            <option value="11.5">US 11.5</option>
+            <option value="12">US 12</option>
+            <option disabled>Other Size Selection</option>
+            <option value="XS">Extra Small</option>
+            <option value="S">Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+            <option value="XL">Extra Large</option>
+        </select>
+        <label class="line" for="size">Shoe Size Selection</label>
+
+        <div class="labels">
+            <p id="payment-label">Payment Method</p>
+            <p id="atc-label">ATC</p>
+            <p id="size-label">Size Selection</p>
+            <p id="checkout-label">Checkout</p>
+            <p id="restock-label">Restock Mode</p>
+            <p id="sounds-label">Sounds</p>
+            <p id="status-label">Enable/Disable Bot</p>
+        </div>
+        <div class="wrapper">
+            <div id="payment-wrapper">
+                <div class="switch-field-lb">
+                    <input class="switch-on" type="radio" id="payment-one" name="payment" value="credit" checked/>
+                    <label for="payment-one">Credit</label>
+                    <input class="switch-off" type="radio" id="payment-two" name="payment" value="debit"/>
+                    <label for="payment-two">Debit</label>
+                </div>
+            </div>
+            <div id="atc-wrapper">
+                <div class="switch-field">
+                    <input class="switch-on" type="radio" id="atc-one" name="atc" value="on" checked/>
+                    <label for="atc-one">Enable</label>
+                    <input class="switch-off" type="radio" id="atc-two" name="atc" value="off"/>
+                    <label for="atc-two">Disable</label>
+                </div>
+            </div>
+            <div id="size-wrapper">
+                <div class="switch-field">
+                    <input class="switch-on" type="radio" id="size-one" name="size" value="on" checked/>
+                    <label for="size-one">Enable</label>
+                    <input class="switch-off" type="radio" id="size-two" name="size" value="off"/>
+                    <label for="size-two">Disable</label>
+                </div>
+            </div>
+            <div id="checkout-wrapper">
+                <div class="switch-field">
+                    <input class="switch-on" type="radio" id="checkout-one" name="checkout" value="on" checked/>
+                    <label for="checkout-one">Enable</label>
+                    <input type="radio" id="checkout-two" name="checkout" value="off"/>
+                    <label class="switch-off" for="checkout-two">Disable</label>
+                </div>
+            </div>
+            <div id="restock-wrapper">
+                <div class="switch-field">
+                    <input class="switch-on" type="radio" id="restock-one" name="restock" value="off" checked/>
+                    <label for="restock-one">Enable</label>
+                    <input class="switch-off" type="radio" id="restock-two" name="restock" value="on"/>
+                    <label for="restock-two">Disable</label>
+                </div>
+            </div>
+            <div id="sounds-wrapper">
+                <div class="switch-field">
+                    <input class="switch-on" type="radio" id="sounds-one" name="sounds" value="off" checked/>
+                    <label for="sounds-one">Enable</label>
+                    <input class="switch-off" type="radio" id="sounds-two" name="sounds" value="on"/>
+                    <label for="sounds-two">Disable</label>
+                </div>
+            </div>
+            <div id="status-wrapper">
+                <div class="switch-field">
+                    <input class="switch-on" type="radio" id="status-one" name="status" value="off" checked/>
+                    <label for="status-one">Enable</label>
+                    <input class="switch-off" type="radio" id="status-two" name="status" value="on"/>
+                    <label for="status-two">Disable</label>
+                </div>
+            </div>
+        </div>
+
+        <a id="button-config">
+            <img id="settingIMG" src="imgs/Setting.png">
+            <p id="config-text">Config Page</p>
+        </a>
+        <a id="button-start">
+            <img id="monitorIMG" src="imgs/Play.png">
+            <p id="start-text">Start Monitor</p>
+        </a>
+
+        <button id="button-save2" value="Save">
+            <img src="imgs/save.png">
+        </button>
+        <p id="save2-text">Save</p>
+
+    </div>
+</body>
+</html>

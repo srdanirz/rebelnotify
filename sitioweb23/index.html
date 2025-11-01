@@ -1,0 +1,348 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rebel Notify</title>
+<link rel="icon" type="image/png" sizes="16x16" href="img/fav.png">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+ <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet"> 
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion({
+      collapsible: true
+    });
+  });
+$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > 150) {
+        $('nav').addClass('fixed');
+    } else {
+        $('nav').removeClass('fixed');
+    }
+});
+  </script>
+  <script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
+</head>
+<body>
+<header id="header">
+<nav class="navbar navbar-default">
+	<div class="container">
+		<div class="row">
+			<a class="navbar-brand scroll-link" href="/" data-id="home"><img alt="Logo" src="img/logo.png" class="logo" /></a>
+			<div class="toggle_icon"> <img src="img/menu.png"/> </div>	
+			<div class="navbar-header width-35" id="nav">
+					<ul class="nav navbar-nav">
+						<li><a href="#header"> Principal </a></li>
+						<li><a href="#features"> Que Ofrecemos </a></li>						
+						<li><a href="#faq">Preguntas Frecuentes</a></li>	
+						<li><a href="#contact">Contacto</a></li>
+					</ul>
+			<div class="collapse navbar-collapse right" id="bs-example-navbar-collapse-1">				
+				<div class="discord_btn"> <a href="#" target="blank" class="buttons">Pronto</a> </div>
+			</div>
+			</div>		
+		</div>
+	</div>
+</nav>
+
+<div class="container index_1">
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+			<img src="img/banner.png" class="wow slideInRight header_imgs"  style=" animation-duration: 2s;">
+		</div>
+		<div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+			<div class="main_header wow slideInRight" style=" animation-duration: 2s;">
+				<h2>Simplifica tu éxito con <span class="tag">Rebel Notify</span></h2>
+				<p> Brindamos a nuestra comunidad altos estándares de calidad en nuestras herramientas y soluciones
+				para poder tener éxito en cada lanzamiento. </p>
+				<button class="buttons"> <a href="https://docs.google.com/forms/d/e/1FAIpQLSeEEtn9JeQLHv7jhSCOjn5yJFoT04bkgxVCOQnAw-0uhPKf0A/viewform?usp=sf_link">Postula Ahora</a></button>			
+			</div>
+		</div>
+	</div>
+</div>
+</header>
+
+<section id="features" class="bout_p1">
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div class="section_title text-center wow slideInLeft" style=" animation-duration: 2s;">
+				<h2 class="tag">Que Ofrecemos </h2>
+			</div>
+		</div>
+		
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow slideInLeft" style=" animation-duration: 2s;">
+			<div class="features_wraper">
+			<div class="left_features"><img src="img/feat1.png"/></div>
+			<div class="right_features">
+			<h3> Monitores </h3>
+			<p> Los monitores se encargan de notificar cada lanzamiento, cada restock, cada cambio que ocurra en cada sitio.  </p>
+			</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow slideInLeft" style=" animation-duration: 2s;">
+			<div class="features_wraper">
+			<div class="left_features"><img src="img/feat2.png"/></div>
+			<div class="right_features">
+			<h3>  Bots  </h3>
+			<p> Programas automatizados para la compra automática u obtener algún beneficio difícil de lograr por un solo humano. </p>
+			</div>
+			</div>
+		</div>		
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow slideInLeft" style=" animation-duration: 2s;">
+			<div class="features_wraper">
+			<div class="left_features"><img src="img/crypto.webp"/></div>
+			<div class="right_features">
+			<h3> Crypto </h3>
+			<p> Ofrecemos un servicio de señales para criptomonedas, con traders internacionales de gran calidad. <strong>Servicio completamente gratuito.</strong> </p>
+			</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow slideInLeft" style=" animation-duration: 2s;">
+			<div class="features_wraper">
+			<div class="left_features"><img src="img/feat5.png"/></div>
+			<div class="right_features">
+			<h3> Información Exclusiva </h3>
+			<p>Otorgamos información de futuros lanzamientos que es difícil de encontrar públicamente, las fechas, las horas, de eso nos encargamos nosotros. </p>
+			</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow slideInLeft" style=" animation-duration: 2s;">
+			<div class="features_wraper">
+			<div class="left_features"><img src="img/feat4.png"/></div>
+			<div class="right_features">
+			<h3> Futuros Lanzamientos  </h3>
+			<p> Ademas de otorgar información y sus respectivos análisis, otorgamos todos los SKUS (ATC), los PID, para que siempre estes en ventaja frente al resto.</p>
+			</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow slideInLeft" style=" animation-duration: 2s;">
+			<div class="features_wraper">
+			<div class="left_features"><img src="img/hyperlink.png"/></div>
+			<div class="right_features">
+			<h3> Early links </h3>
+			<p> Proveemos links junto a sus respectivos códigos para todos los futuros lanzamientos, para acceder a ellos sin necesidad de buscarlos. </p>
+			</div>
+			</div>
+		</div>
+	</div> 
+</div>
+</section>
+ 
+ 
+ 
+<section id="Bot" class="bout_p1">
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div class="section_title text-center wow slideInLeft" style=" animation-duration: 2s;">
+				<h2 class="tag">BOTS </h2>
+			</div>
+		</div>		
+		<div class="col-lg-4 col-md-4 col-sm-4col-xs-12 wow slideInLeft" style=" animation-duration: 2s;">
+			<div class="bot_sectionsp">
+			<p> Los bots hacen el trabajo por ti, esa es nuestra misión con el desarrollo de estas herramientas digitales. Contamos con un bot que funciona para las tiendas locales de Chile, con una velocidad optima de compra, y con sistema de monitoreo que no te hará perder ningún restock. Además, estamos pronto a presentar un nuevo bot, ¿a quién le gusta ser de los últimos en las filas?</p>
+			</div>
+		</div>
+		<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 wow slideInLeft" style=" animation-duration: 2s;">
+			<div class="image_section flex">
+				<img src="img/b2.png"/>
+			</div>
+		</div>		
+		  
+		  
+		  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top12 mgtt">
+			<div class="section_title text-center wow slideInLeft" style=" animation-duration: 2s;">
+				<h2 class="tag">MONITORES </h2>
+				<p> Nos enorgullece poder contar con los monitores más rápidos, siempre nos esforzamos de contar con la mayor capacidad posible de monitoreo, para satisfacer cada lanzamiento o restock en cada sitio. </p>
+			</div>
+		</div>		
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow slideInLeft" style=" animation-duration: 2s;">
+			<div class="image_section">
+				<img src="img/mon1.png"/>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4col-sm-4 col-xs-12 wow slideInLeft" style=" animation-duration: 2s;">
+			<div class="image_section">
+				<img src="img/mon2.png"/>
+			</div>
+		</div>	
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow slideInLeft" style=" animation-duration: 2s;">
+			<div class="image_section">
+				<img src="img/mon4.png"/>
+			</div>
+		</div>	
+	 		 
+		 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top12 mgtt">
+			<div class="section_title text-center wow slideInLeft" style=" animation-duration: 2s;">
+				<h2 class="tag">CRYPTO </h2>
+				<p>En nuestro servicio de señales, siempre tratamos de otorgar los mejores trades posibles, es por esto que cada trader tiene su propio historial que habla de su propio éxito y fracaso, con el fin de educar y obtener ganancias de forma realista a través de las criptomonedas. <strong>Este servicio era completamente gratuito para todos los miembros.</strong></p>
+			</div>
+		</div>		
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow slideInLeft" style=" animation-duration: 2s;">
+			<div class="image_section">
+				<img src="img/c1.png"/>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow slideInLeft" style=" animation-duration: 2s;">
+			<div class="image_section">
+				<img src="img/c2.png"/>
+				<img src="img/arrow.png" class="arrow_img"/>
+			</div>
+		</div>	
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow slideInLeft" style=" animation-duration: 2s;">
+			<div class="image_section">
+				<img src="img/c3.png"/>
+				<img src="img/arrow.png" class="arrow_img1"/>
+			</div>
+		</div>	
+ 		  
+		  
+		   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top12 mgtt">
+			<div class="section_title text-center wow slideInLeft" style=" animation-duration: 2s;">	
+				<div class="member_section">
+					<h2 class="tag">Precios </h2>
+					<p>Nosotros beneficiamos a los miembros que llevan mucho tiempo con nosotros, es por esto que los precios disminuyen a medida que un miembro permanece en nuestro grupo, además, todos los niveles tienen los mismos beneficios, solo cambia el precio mensual. Simplemente nos preocupamos por tu éxito, y nada mas. ¡Queremos verte crecer! </p>
+					<ul class="member_loyal">
+						<li> Plata 🪙: 20 USD ($16.000 aprox.), sin requerimientos</li>
+						<li>Oro 🔱: 15 USD ($12.000 aprox.), requerimiento: haber renovado por lo menos 3 meses. </li>
+						<li>Platino ❄️: 12 USD ($10.000 aprox.), requerimiento: haber renovado por lo menos 1 año. </li>
+						<li> Eternal ☂️: 500 USD ($410.000 aprox.), para los leales que quieren estar con nosotros por siempre.</li>
+						<li>Booster 🚀: recibe un 50% de descuento en tu membresía al mejorar el servidor con Discord NITRO. </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div> 
+</div>
+</section>
+ 		
+<section id="faq">
+<div class="container max-width1000">
+	<div class="row">		 		
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div class="section_title text-center wow slideInLeft" style=" animation-duration: 2s;">
+				<h2 class="tag">Preguntas Frecuentes  </h2> 		
+			</div>
+		</div>
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 wow slideInLeft" style=" animation-duration: 2s;">
+			  <div class="col">
+				<div class="tabs">
+				  <div class="tab">
+					<input type="checkbox" id="chck1">
+					<label class="tab-label" for="chck1">Necesito experiencia para unirme?</label>
+					<div class="tab-content">
+					  ¡Absolutamente no! Gracias a nuestro experimentado y dedicado equipo. Te cubrimos en todos los aspectos de la reventa. Te guiaremos a través de todo lo que necesitas saber.
+					</div>
+				  </div>
+				  <div class="tab">
+					<input type="checkbox" id="chck2">
+					<label class="tab-label" for="chck2">¿Puedo cancelar mi membresía en cualquier momento?</label>
+					<div class="tab-content">
+					  Si, por supuesto. Solo tienes que ir a nuestras plataformas de pago, y cancelar! Nunca te impediremos cancelar.
+					</div>
+				  </div>
+				   
+				   <div class="tab">
+					<input type="checkbox" id="chck4">
+					<label class="tab-label" for="chck4">¿Qué los separa de otros grupos?</label>
+					<div class="tab-content">
+					  No somos un grupo cualquiera, somos una comunidad muy acogedora y amigable, ademas de ser pioneros en Chile. No solo te ayudamos a comprar, escuchamos los comentarios y hacemos cambios y mejoras diariamente para ayudar a todos nuestros miembros en todas las formas posibles.
+					</div>
+				  </div>
+				   
+				   <div class="tab">
+					<input type="checkbox" id="chck5">
+					<label class="tab-label" for="chck5">¿Cuando se abren cupos?</label>
+					<div class="tab-content">
+					  Los cupos se abren a principios de cada mes, tienes que estar atento a nuestro instagram para informarte de las fechas y resultados de las postulaciones.
+					</div>
+				  </div>
+				</div>
+			  </div>
+		</div>	
+	</div> 
+</div>
+</section>
+  
+  <section id="contact">
+	<div class="container">
+		<div class="row"> 
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+				<div class="section_title contact_socials text-center wow slideInRight" style=" animation-duration: 2s;">
+					<h2 class="tag">Contacta A Nuestro Soporte</h2>
+					<ul class="social_icons flex"> 
+						<li> <a href="https://www.instagram.com/rebelnotify/?hl=es" class="insta"><i class="fa fa-instagram" aria-hidden="true"></i>  @rebelnotify</a></li>
+						<li> <a href="https://mail.google.com/mail/u/0/" class="email"><i class="fa fa-envelope" aria-hidden="true"></i>  support@rebelnotify.com</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 slidetilUp wow">
+			<div class="footer_content flex">
+				<img src="img/logo.png"/>
+				 <h2 class="tag">Rebel Notify</h2>
+			</div>
+		</div>
+		<div class="col-lg-8">
+			<div class="footer_content">
+				<p class="copyright"> Copyright © 2022, <span class="tag"><strong>Rebel Notify</strong></span> </p>
+			</div>
+		</div>
+	</div>
+</div>
+</footer> 
+<script  src="js/wow.js"></script>
+<script>
+wow = new WOW({
+	animateClass: 'animated',
+	offset:       100,
+	callback:     function(box) {
+	console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+	}
+});
+wow.init();
+document.getElementById('moar').onclick = function() {
+	var section = document.createElement('section');
+	section.className = 'section--purple wow fadeInDown';
+	this.parentNode.insertBefore(section, this);
+}; 
+</script>  
+	  <script>
+	$(document).ready(function(){
+	  $(".toggle_icon").click(function(){
+		$("#nav").toggle();
+	  });
+	});
+</script>      
+</body>
+</html>
+

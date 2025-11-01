@@ -1,0 +1,387 @@
+ 
+@media only screen and (max-width:1250px){
+.container {
+width: 100%;
+padding-left: 2%;
+padding-right: 2%;
+}
+.width-35 {
+width: auto;
+}
+
+.mgtop-8 {
+  margin-top:30px!important;
+}
+
+.bout_p1{
+		padding-top: 100px;
+	}
+	
+}
+
+
+@media only screen and (max-width:1100px){
+.container {
+width: 100%;
+padding-left: 5%;
+padding-right: 5%;
+}
+
+.hero_img{
+width:100%;
+}
+
+.shape33 , .shape11{
+	display:none;
+}
+}
+
+
+
+@media (max-width:1080px) {
+
+#membership .container {
+  max-width: 100%;
+}
+
+#faq .row .col:last-child {
+  margin-right: 0;
+}
+.membership_sections{
+	margin-bottom: 2em;
+}
+
+.navbar-default .navbar-nav > li > a
+{
+padding: 30px 10px;
+font-size: 15px;
+font-weight: 500;
+}
+
+.footer_content{
+	margin-top:0;
+	}
+
+.join_section::before , .join_section {
+width:100%;
+}
+.timeline .block{
+min-height: auto;
+margin-bottom: 20px;
+}
+
+.about_right_contnet{
+left: 0;
+}
+
+.benefits_lefts ul li{
+width: 100%;
+}
+.timeline .block , .second_icons .block{
+border: none;
+}
+.round_cont{
+display: none;
+}
+.aboutsp{
+padding-right: 0
+}
+.product_content {
+width: 100%;
+}
+
+.product_content .text-left {
+padding-left: 15px;
+}
+}
+
+
+@media only screen and (max-width:992px){	
+#faq {
+padding:50px 15px;
+}
+
+footer h3{
+margin-top: 15px
+}
+.team_2 {
+width: 100%;
+margin: auto;
+}
+}
+
+@media only screen and (max-width:810px){	
+header{
+	background-image:none;
+}
+
+.header_imgs {
+  width: 50%;
+  margin-top: 3em;
+}
+
+.navbar-default .navbar-nav > li > a
+{
+padding: 30px 10px;
+}
+#nav{
+	display:none;
+}
+.toggle_icon {
+  display: block;
+}
+
+.width-35 {
+  width: 100%;
+}
+
+.logo{
+	width: 60px;
+}
+
+.navbar-brand {
+	padding: 0px 15px;
+}
+
+.navbar-header {
+  float: right;
+  position: absolute;
+  width: 100%;
+  top: 70px;
+  background-color: #000;
+  left: 1px;
+}
+
+#team{
+padding: 36px 0;
+}
+
+.arrow_img1 , .arrow_img
+{
+	display:none;
+}
+
+.image_section img {
+	margin:0;
+}
+
+.copyright {
+	float:left;
+}
+.social_icons li {
+	width: 100%;
+margin-right: 0;
+}
+
+.social_icons {
+	display:block !important;
+}
+.contact_socials {
+	width:100%;
+}
+.member_section{
+	width:100%;
+}
+}
+
+@media only screen and (max-width:768px){	
+.discord_btn {
+  float: left;
+  position: relative;
+  top: 0;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+	#membership h2, #testimonials h2 , #faq h2{
+font-size: 25px;
+font-weight: 500;
+	}
+	
+	.main_header p{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 17px;
+	font-weight: 500;
+	}
+	
+	.footer_content img {
+  height: 100px;
+}
+
+	.footer_content h2{
+		font-size: 30px;
+	}
+	
+	.logo{
+		margin-top:-3px;
+	}
+
+#waitlist .container{
+width:100%;	
+}
+
+#about .section_title  img , .pdtop3 img{
+width:100%;
+}
+.join_section{
+margin-bottom: 5em;
+}
+#features h2{
+font-size: 20px;
+}
+
+.join_section h1{
+font-size: 23px;
+line-height: 30px;
+}
+
+.fgg{
+padding-top: 1em;
+}
+
+.footer_content {
+margin-top:2em;
+}
+
+.main_header h2{
+font-size: 35px;
+line-height: 40px;
+}
+
+header{
+min-height:auto;
+height:auto;
+}
+
+.join_waitlist {
+margin-top: 0em;
+padding: 0px 15px;
+}
+
+
+#features .features_wraper{
+padding:30px;
+}
+.about_us_s{
+width: 100%;
+padding: 20px;
+}
+
+.about_us_s h2 {
+font-size: 35px;
+}
+
+footer{
+padding: 50px 15px 50px;
+}
+
+.mob_displ11{
+display:block;
+}
+.second_icons .block{
+left:-13px;
+}
+.product_content .text-right{
+padding-right: 15px;
+}
+#about {
+margin-top: 0;
+padding-left: 12px;
+padding-right: 15px;
+}
+
+.timeline{
+margin: 0;
+padding: 0;
+}
+
+.text-right h2 , #product .text-center p{
+text-align: left !important;
+}
+
+.timeline .block , .img_product {
+text-align: left;
+}
+.mob_dis_2 {
+display:none;
+}
+
+.icons .icc
+{
+margin-bottom: 10px;	 
+}
+.navbar-default .navbar-nav > li > a {
+
+padding: 5px 15px;
+
+}
+.container {
+width: 100%;
+padding-left: 2%;
+padding-right: 2%;
+}
+
+.main_header{
+z-index:9;	
+margin-top: 3em;
+}
+
+p{
+font-size: 15px;
+}
+
+.ab_img img{
+width: 100%;
+margin-bottom: 15px;
+}
+
+#about h2{
+font-size: 35px;
+}
+.navbar-default
+{
+background-color: #050513;
+padding-left: 10px;
+padding-right: 5px;
+}
+
+.main_header img {
+width: 100%;
+}
+
+.main_header{
+width:100%;
+}
+.collapse {
+display: none;
+position: absolute;
+width: 100%;
+background-color:#050513;
+top: 75px;
+padding-bottom: 15px;
+z-index: 9999999999;
+left:0;
+}
+
+nav .connect_btn{
+margin: 0;
+width: 200px;
+padding: 15px 1px !important;
+text-align: center;
+}
+
+.navbar-right{
+margin-bottom: 10px;
+}
+ 
+.ui-state-default{
+font-size:16px !important;
+}
+ 
+}
+
+
+
+
+
+

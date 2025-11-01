@@ -1,0 +1,126 @@
+{
+    "manifest_version": 3,
+    "name": "Rebel Notify Autofill",
+    "description": "Extensión de autofill para Bold y Moredrops - Actualizado a Manifest V3",
+    "version": "3.1",
+    "author": "srdanirz",
+    "icons": {
+     "128": "./imgs/logo.png"
+    },
+    "action": {
+      "default_icon": "./imgs/logo.png",
+      "default_popup": "./index.html",
+      "default_title": "Rebel Autofill"
+    },
+    "background": {
+      "service_worker": "./background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://moredrops.cl/*"],
+        "exclude_matches": [],
+        "js": ["./handler.js"],
+        "all_frames": true,
+        "run_at": "document_start"
+      },
+      {
+        "matches": ["https://lonthentication.herokuapp.com/oauth*"],
+        "exclude_matches": [],
+        "js": ["./oauth.js"],
+        "all_frames": true,
+        "run_at": "document_start"
+      },
+      {
+        "matches": ["https://bold.cl/*"],
+        "exclude_matches": [],
+        "js": ["./scripts/detectChange.js", "./scripts/common.js"],
+        "all_frames": true,
+        "run_at": "document_start"
+      },
+      {
+        "matches": ["https://moredrops.cl/Drops/*","https://moredrops.cl/Children/*"],
+        "exclude_matches": [],
+        "js": ["./scripts/item.js"],
+        "all_frames": true,
+        "run_at": "document_start"
+      },
+      {
+        "matches": ["https://bold.cl/Bold/Hombre/*", "https://bold.cl/Bold/Mujer/*","https://bold.cl/Bold/Ni%C3%B1os/*", "https://bold.cl/Bold/Ni%C3%B1o/*"],
+        "exclude_matches": [],
+        "js": ["./scripts/boldItem.js"],
+        "all_frames": true,
+        "run_at": "document_start"
+      },
+      {
+        "matches": ["https://moredrops.cl/cart"],
+        "exclude_matches": [],
+        "js": ["./scripts/cart.js", "./scripts/common.js"],
+        "all_frames": true,
+        "run_at": "document_start"
+      },
+      {
+        "matches": ["https://moredrops.cl/login/checkout","https://moredrops.cl/login/checkout?error=true","https://bold.cl/login/checkout","https://bold.cl/login/checkout?error=true"],
+        "exclude_matches": [],
+        "js": ["./scripts/login.js", "./scripts/common.js"],
+        "all_frames": true,
+        "run_at": "document_start"
+      },
+      {
+        "matches": ["https://moredrops.cl/checkout/multi/delivery-address/add"],
+        "exclude_matches": [],
+        "js": ["./scripts/checkout/shipping.js", "./scripts/common.js"],
+        "all_frames": true,
+        "run_at": "document_start"
+      },
+      {
+        "matches": ["https://moredrops.cl/checkout/multi/pickup-data"],
+        "exclude_matches": [],
+        "js": ["./scripts/checkout/pickup.js", "./scripts/common.js"],
+        "all_frames": true,
+        "run_at": "document_start"
+      },
+      {
+        "matches": ["https://moredrops.cl/checkout/multi/delivery-method/choose"],
+        "exclude_matches": [],
+        "js": ["./scripts/checkout/delivery.js", "./scripts/common.js"],
+        "all_frames": true,
+        "run_at": "document_start"
+      },
+      {
+        "matches": ["https://moredrops.cl/checkout/multi/payment-mode/choose","https://bold.cl/checkout/multi/payment-mode/choose"],
+        "exclude_matches": [],
+        "js": ["./scripts/checkout/payment.js", "./scripts/common.js"],
+        "all_frames": true,
+        "run_at": "document_start"
+      },
+      {
+        "matches": ["https://moredrops.cl/checkout/multi/payment-method/add","https://bold.cl/checkout/multi/payment-method/add"],
+        "exclude_matches": [],
+        "js": ["./scripts/checkout/method.js", "./scripts/common.js"],
+        "all_frames": true,
+        "run_at": "document_start"
+      },
+      {
+        "matches": ["https://moredrops.cl/checkout/multi/summary/view","https://bold.cl/checkout/multi/summary/view"],
+        "exclude_matches": [],
+        "js": ["./scripts/checkout/summary.js", "./scripts/common.js"],
+        "all_frames": true,
+        "run_at": "document_start"
+      }
+    ],
+    "permissions": [
+      "storage"
+    ],
+    "host_permissions": [
+      "https://moredrops.cl/*",
+      "https://bold.cl/*",
+      "https://lonthentication.herokuapp.com/*",
+      "https://discord.com/*"
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["sound.mp3"],
+        "matches": ["<all_urls>"]
+      }
+    ]
+  }
